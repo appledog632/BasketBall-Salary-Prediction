@@ -1,6 +1,5 @@
 import streamlit as st
 import pickle
-import sklearn 
 import pandas as pd
 import numpy as np
 from PIL import Image
@@ -10,7 +9,7 @@ st.sidebar.header('Player Data')
 image=Image.open('basketball.jpg')
 st.image(image,'')
 def user_report():
-    rating=st.sidebar.slider('Rating',50,100,1)
+    rating=st.sidebar.slider('Rating',50,100,75)
     jersey=st.sidebar.slider('Jersey',0,100,1)
     team=st.sidebar.slider('team',0,30,1)
     position=st.sidebar.slider('Position',0,10,1)
